@@ -1,13 +1,10 @@
 function sumaKwadratow(tablica) {
   let suma = 0;
 
-  suma =
-    Math.pow(tablica[0], 2) +
-    Math.pow(tablica[1], 2) +
-    Math.pow(tablica[2], 2) +
-    Math.pow(tablica[3], 2) +
-    Math.pow(tablica[4], 2) +
-    Math.pow(tablica[5], 2);
+  for (let i = 0; i < tablica.length; i++) {
+    suma = suma + Math.pow(tablica[i], 2);
+  }
+
   return suma;
 }
 
